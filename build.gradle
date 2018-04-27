@@ -8,10 +8,11 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
-		classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+		classpath "org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}"
 
+    classpath 'org.asciidoctor:asciidoctorj-diagram:1.5.8'
 		classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
 		classpath "com.github.jruby-gradle:jruby-gradle-plugin:1.5.0"
 	}
@@ -59,8 +60,6 @@ dependencies {
 	compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.2")
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-
-	gems 'rubygems:asciidoctor-diagram:1.5.4.1'
 }
 
 asciidoctorj {

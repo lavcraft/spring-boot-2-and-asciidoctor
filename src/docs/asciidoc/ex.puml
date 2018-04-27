@@ -1,0 +1,10 @@
+@startuml
+title Just a test
+
+(*)--> "Check input args"
+
+    --> "Fetch some data"
+    --> "Improve your mind"
+    --> "Fix all bugs and repeat!"
+-->(*)
+@enduml
